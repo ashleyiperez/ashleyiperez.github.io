@@ -52,9 +52,9 @@ body {font-family: Arial;}
 <p>Click on the buttons inside the tabbed menu to learn more:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
-  <button class="tablinks" onclick="openCity(event, 'Resume/CV')">Resume/CV</button>
-  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openSection(event, 'About Me')">About Me</button>
+  <button class="tablinks" onclick="openSection(event, 'Resume/CV')">Resume/CV</button>
+  <button class="tablinks" onclick="openSection(event, 'Projects')">Projects</button>
 </div>
 
 <div id="About Me" class="tabcontent">
@@ -73,7 +73,7 @@ body {font-family: Arial;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openSection(evt, sectionName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -83,7 +83,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(sectionName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
