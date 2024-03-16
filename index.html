@@ -69,9 +69,11 @@ background-color: #ffffff;
   text-align: left;
 }
 
-#wrapper, img{
-  width: 100%;
-  height: 100%;
+.fixpixel img{
+height: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 </style>
@@ -177,9 +179,8 @@ function openSection(evt, sectionName) {
 }
 </script>
    
-
 </nav>
-<div id = "wrapper">
-<img src="/assets/images/background_image.jpg" alt="background" display: float>
+<div class = "fixpixel">
+<img src="/assets/images/background_image.jpg" alt="background"/>
 </div>
 </html> 
