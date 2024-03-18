@@ -12,7 +12,12 @@ h1{
     padding-top: 4em;
 }
 
+h2{
+    padding-top: 4em;
+}
+
 p{
+    padding-left: 4em;
     margin: 2em 0;
 }
 
