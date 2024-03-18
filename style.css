@@ -1,11 +1,11 @@
 header{
-    margin: 25;
-    padding: 100;
+    margin: 0;
+    padding: 0;
     text-align: left;
 }
 body {
   margin: 0;
-  padding: 1000;
+  padding: 0;
   text-align: center;
 }
 h1{
